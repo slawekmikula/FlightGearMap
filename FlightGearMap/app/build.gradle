@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.juanvvc.flightgear"
+        minSdkVersion 9
+        targetSdkVersion 15
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'org.osmdroid:osmdroid-android:5.5:release@aar'
+    compile 'org.slf4j:slf4j-android:1.7.21'
+    compile 'com.google.android.gms:play-services-ads:10.0.1'
+    compile 'org.osmdroid:osmdroid-third-party:5.5:release@aar'
+}
