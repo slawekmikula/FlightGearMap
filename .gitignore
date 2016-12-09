@@ -1,1 +1,6 @@
 /.project
+/FlightGearMap/.idea
+/FlightGearMap/build
+/FlightGearMap/gradle
+/FlightGearMap/app/build
+/FlightGearMap/local.properties
